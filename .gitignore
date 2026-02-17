@@ -33,6 +33,7 @@ build/
 data/raw/*.csv
 data/raw/*.xlsx
 data/raw/*.parquet
+data/raw/*.geojson
 data/processed/*.csv
 data/processed/*.xlsx
 data/processed/*.parquet
