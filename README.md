@@ -35,9 +35,9 @@ Public Airbnb listings dataset (Inside Airbnb or similar open dataset), containi
 ---
 
 ## 📈 Deliverables
-- SQL schema and analytical queries  
-- Cleaned dataset (if applicable)  
-- Tableau dashboard showcasing key metrics and trends  
+- **SQL** — schema and analytical queries (primary analytics)  
+- **Tableau** — dashboard showcasing key metrics and trends (including neighbourhood map)  
+- **Notebooks** — used only for exploration and sanity checks; they inform SQL and dashboard design but are not the final deliverables  
 - Written insights summarizing findings  
 
 ---
