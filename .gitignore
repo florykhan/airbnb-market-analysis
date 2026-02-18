@@ -65,5 +65,8 @@ tmp/
 temp/
 *.tmp
 
+# Personal notes
+useful notes/
+
 # Examples
 examples/
