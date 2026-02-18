@@ -35,11 +35,14 @@ The main deliverable for visual storytelling is an interactive dashboard publish
 
 **[Vancouver Airbnb Prices — Neighbourhoods & Room Types](https://public.tableau.com/app/profile/ilian.khankhalaev/viz/VancouverAirbnbPricesNeighbourhoodsRoomTypes/Dashboard1?publish=yes)**
 
-The dashboard showcases:
-- **Prices by neighbourhood** — how median and average prices vary across Vancouver neighbourhoods.
-- **Prices by room type** — comparison of Entire home/apt, Private room, and Shared room.
-- **Spatial context** — neighbourhood-level map view for geographic patterns.
-- **Key metrics** — listing counts, averages, and distributions to support decision-making.
+The dashboard explores how Airbnb prices vary across Vancouver neighbourhoods, room types, and listing popularity. It includes:
+
+- **Vancouver Airbnb: Median Price by Neighbourhood** — A choropleth map of Vancouver where neighbourhoods are shaded by median nightly price (darker blue = higher price), giving a quick geographic view of where listings are pricier.
+- **Airbnb Price vs Reviews (Vancouver)** — A scatter plot of Price per Night (CAD) vs Number of Reviews, showing how price and review volume relate across listings (e.g. concentration at lower prices and fewer reviews).
+- **Median Airbnb Price by Room Type (Vancouver)** — A horizontal bar chart comparing median price for Entire home/apt, Private room, and Shared room (e.g. entire homes highest, shared rooms lowest).
+- **Top 10 Neighbourhoods by Median Price** — A horizontal bar chart of the neighbourhoods with the highest median nightly price (e.g. Downtown, Kitsilano, Downtown Eastside).
+
+**Interactive filters** let you narrow the view: sliders for Avg Listing Price (CAD), % Entire Home Listings, and Median Nightly Price (CAD), plus a Room Type legend (Entire home/apt, Hotel room, Private room, Shared room) to focus on specific listing types.
 
 Use the link above to explore the dashboard in your browser (no Tableau installation required).
 
