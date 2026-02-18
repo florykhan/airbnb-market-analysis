@@ -34,12 +34,10 @@ data/raw/*.csv
 data/raw/*.xlsx
 data/raw/*.parquet
 data/raw/*.geojson
-data/processed/*.csv
-data/processed/*.xlsx
-data/processed/*.parquet
 *.csv
 *.xlsx
 *.parquet
+!data/processed/*.csv
 # Keep structure: !data/**/.gitkeep
 
 # Tableau
