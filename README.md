@@ -35,6 +35,8 @@ The main deliverable for visual storytelling is an interactive dashboard publish
 
 **[Vancouver Airbnb Prices | Neighbourhoods & Room Types](https://public.tableau.com/app/profile/ilian.khankhalaev/viz/VancouverAirbnbPricesNeighbourhoodsRoomTypes/Dashboard1?publish=yes)**
 
+![Vancouver Airbnb Dashboard](Tableau%20Screenshot.png)
+
 The dashboard explores how Airbnb prices vary across Vancouver neighbourhoods, room types, and listing popularity. It includes:
 
 - **Vancouver Airbnb: Median Price by Neighbourhood** — A choropleth map of Vancouver where neighbourhoods are shaded by median nightly price (darker blue = higher price), giving a quick geographic view of where listings are pricier.
