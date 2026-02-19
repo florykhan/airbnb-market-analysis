@@ -118,7 +118,7 @@ source venv/bin/activate      # macOS/Linux
 ### 3️⃣ Install dependencies
 
 ```bash
-pip install pandas
+pip3 install pandas
 ```
 (`sqlite3` is part of the Python standard library.)
 
@@ -131,7 +131,7 @@ Download the Vancouver dataset from [Inside Airbnb](http://insideairbnb.com/get-
 - `neighbourhoods.geojson` (optional; for Tableau map layers)
 
 ```bash
-# Example: ensure directory exists and place files there
+# Ensure directory exists and place files there
 mkdir -p data/raw
 # Then copy listings.csv, reviews.csv (and optionally neighbourhoods.geojson) into data/raw/
 ```
@@ -141,7 +141,7 @@ mkdir -p data/raw
 This step creates (or replaces) `data/airbnb.db`, cleans prices (strip `$` and commas, convert to numeric), normalizes dates, and loads listings and reviews.
 
 ```bash
-python scripts/load_to_db.py
+python3 scripts/load_to_db.py
 ```
 
 You should see output similar to:
@@ -154,8 +154,8 @@ You should see output similar to:
 Run the SQL queries and export results to `data/processed/`:
 
 ```bash
-python scripts/export_neighbourhood_summary.py
-python scripts/export_room_type_summary.py
+python3 scripts/export_neighbourhood_summary.py
+python3 scripts/export_room_type_summary.py
 ```
 
 Output files:
