@@ -1,6 +1,6 @@
-# 🏠 Vancouver Airbnb Market Analysis — SQL + Tableau
+# 🏠 Vancouver Airbnb Market Analysis | SQL + Tableau
 
-This repository implements an **end-to-end data analytics workflow** for Vancouver Airbnb listing data: from raw CSV ingestion and SQLite storage, through SQL-based aggregation and export, to an **interactive Tableau dashboard** that communicates pricing, neighbourhood, and room-type insights. The project demonstrates practical data analyst skills — relational querying, exploratory analysis, and dashboard-driven storytelling — using the **Inside Airbnb** Vancouver dataset.
+This repository implements an **end-to-end data analytics workflow** for Vancouver Airbnb listing data: from raw CSV ingestion and SQLite storage, through SQL-based aggregation and export, to an **interactive Tableau dashboard** that communicates pricing, neighbourhood, and room-type insights. The project demonstrates practical data analyst skills, including relational querying, exploratory analysis, and dashboard-driven storytelling, using the **Inside Airbnb** Vancouver dataset.
 
 ---
 
@@ -21,8 +21,8 @@ The project simulates a real-world data analyst task where stakeholders need cle
 
 - **Structured data pipeline:** Raw CSVs → Python ETL (`scripts/load_to_db.py`) → SQLite (`data/airbnb.db`) with proper price cleaning and date handling.
 - **SQL-first analytics:** Reusable SQL queries in `sql/queries/` that compute median prices (via window functions), averages, and counts; filters exclude NULLs and extreme price outliers ($20–$1000) for sensible summaries.
-- **Neighbourhood summary:** One row per neighbourhood with listing count, average/median price, average reviews, % entire home/apt, average availability (365), and average minimum nights — ordered by listing count.
-- **Room type summary:** One row per room type with listing count, average price, and median price — supporting comparison across Entire home/apt, Private room, Shared room, etc.
+- **Neighbourhood summary:** One row per neighbourhood with listing count, average/median price, average reviews, % entire home/apt, average availability (365), and average minimum nights, ordered by listing count.
+- **Room type summary:** One row per room type with listing count, average price, and median price, supporting comparison across Entire home/apt, Private room, Shared room, etc.
 - **Export scripts:** Python scripts that run the stored SQL and write results to `data/processed/` as CSV, ready for Tableau (or other tools).
 - **Interactive Tableau dashboard:** Public dashboard linking Vancouver Airbnb prices to neighbourhoods and room types, with a map and key metrics.
 - **Exploratory notebook:** `notebooks/01_exploration.ipynb` for EDA, sanity checks, and informing SQL and dashboard design (not the primary deliverable).
@@ -33,7 +33,7 @@ The project simulates a real-world data analyst task where stakeholders need cle
 
 The main deliverable for visual storytelling is an interactive dashboard published on Tableau Public:
 
-**[Vancouver Airbnb Prices — Neighbourhoods & Room Types](https://public.tableau.com/app/profile/ilian.khankhalaev/viz/VancouverAirbnbPricesNeighbourhoodsRoomTypes/Dashboard1?publish=yes)**
+**[Vancouver Airbnb Prices | Neighbourhoods & Room Types](https://public.tableau.com/app/profile/ilian.khankhalaev/viz/VancouverAirbnbPricesNeighbourhoodsRoomTypes/Dashboard1?publish=yes)**
 
 The dashboard explores how Airbnb prices vary across Vancouver neighbourhoods, room types, and listing popularity. It includes:
 
@@ -57,7 +57,7 @@ airbnb-market-analysis/
 │   ├── raw/                                  # Unmodified input data (not in Git: large CSVs/GeoJSON)
 │   │   ├── listings.csv                      # Inside Airbnb Vancouver listings
 │   │   ├── reviews.csv                       # Reviews (listing_id, date)
-│   │   └── neighbourhoods.geojson           # Neighbourhood boundaries for mapping
+│   │   └── neighbourhoods.geojson            # Neighbourhood boundaries for mapping
 │   ├── processed/                            # Query outputs for Tableau (CSV)
 │   │   ├── neighbourhood_summary.csv         # One row per neighbourhood
 │   │   └── room_type_summary.csv             # One row per room type
@@ -75,8 +75,8 @@ airbnb-market-analysis/
 │   ├── schema/
 │   │   └── create_tables.sql                 # Listings + Reviews table definitions
 │   └── queries/
-│       ├── neighbourhood_summary.sql        # Per-neighbourhood metrics (median price, counts, etc.)
-│       └── room_type_summary.sql            # Per–room type metrics (count, avg, median price)
+│       ├── neighbourhood_summary.sql         # Per-neighbourhood metrics (median price, counts, etc.)
+│       └── room_type_summary.sql             # Per–room type metrics (count, avg, median price)
 │
 ├── .gitignore
 ├── LICENSE
@@ -211,8 +211,7 @@ sqlite3 data/airbnb.db < sql/queries/room_type_summary.sql
 
 ## 🧾 License
 
-MIT License — feel free to use and modify with attribution.  
-See the [`LICENSE`](./LICENSE) file for full details.
+MIT License, feel free to use and modify with attribution. See the [`LICENSE`](./LICENSE) file for full details.
 
 ---
 
