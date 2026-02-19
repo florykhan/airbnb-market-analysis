@@ -1,4 +1,4 @@
-# 🏠 Vancouver Airbnb Market Analysis | SQL + Tableau
+# 🏠 Vancouver Airbnb Market Analysis — SQL + Tableau
 
 This repository implements an **end-to-end data analytics workflow** for Vancouver Airbnb listing data: from raw CSV ingestion and SQLite storage, through SQL-based aggregation and export, to an **interactive Tableau dashboard** that communicates pricing, neighbourhood, and room-type insights. The project demonstrates practical data analyst skills, including relational querying, exploratory analysis, and dashboard-driven storytelling, using the **Inside Airbnb** Vancouver dataset.
 
