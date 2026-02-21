@@ -141,7 +141,7 @@ To refresh or re-download, get the files from [Inside Airbnb](http://insideairbn
 
 ### 5️⃣ Load data into SQLite
 
-This step creates (or replaces) `data/airbnb.db`, cleans prices (strip `$` and commas, convert to numeric), normalizes dates, and loads listings and reviews.
+This step creates (or replaces) `data/airbnb.db`: it runs the schema in `sql/schema/create_tables.sql` to create the tables, cleans prices (strip `$` and commas, convert to numeric), normalizes dates, and loads listings and reviews. You do **not** need to run any SQL files manually for this step.
 
 ```bash
 python3 scripts/load_to_db.py
@@ -184,7 +184,7 @@ jupyter notebook notebooks/01_exploration.ipynb
 | **neighbourhood_summary.sql** | One row per neighbourhood: listing count, avg/median price, avg reviews, % entire home, avg availability_365, avg minimum_nights. Excludes NULL neighbourhood/price and prices outside $20–$1000. |
 | **room_type_summary.sql** | One row per room type: listing count, avg price, median price. Same price and NULL filters. |
 
-Median price is computed in SQL using window functions (`ROW_NUMBER`, `PARTITION BY`) to support robust reporting. You can run the queries directly with SQLite:
+Median price is computed in SQL using window functions (`ROW_NUMBER`, `PARTITION BY`) to support robust reporting. **You do not need to run these with the `sqlite3` CLI**, step 6 (the Python export scripts) runs them and writes the CSVs. Optionally, to inspect results in the terminal:
 
 ```bash
 sqlite3 data/airbnb.db < sql/queries/neighbourhood_summary.sql
