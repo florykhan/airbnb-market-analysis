@@ -31,11 +31,12 @@ The project simulates a real-world data analyst task where stakeholders need cle
 
 ## 📊 Tableau Dashboard
 
-The main deliverable for visual storytelling is an interactive dashboard published on Tableau Public (the [`tableau/`](tableau/) folder contains the Tableau workbook (`.twbx`) so you can explore it locally):
+The main deliverable for visual storytelling is an interactive dashboard published on Tableau Public:
 
 **[Vancouver Airbnb Prices | Neighbourhoods & Room Types](https://public.tableau.com/app/profile/ilian.khankhalaev/viz/VancouverAirbnbPricesNeighbourhoodsRoomTypes/Dashboard1?publish=yes)**
 
 ![Vancouver Airbnb Dashboard](tableau/Tableau%20Screenshot.png)
+_(the [`tableau/`](tableau/) folder contains the Tableau workbook (`.twbx`) so you can explore it locally)_
 
 The dashboard explores how Airbnb prices vary across Vancouver neighbourhoods, room types, and listing popularity. It includes:
 
