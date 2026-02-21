@@ -81,9 +81,9 @@ airbnb-market-analysis/
 │       ├── neighbourhood_summary.sql         # Per-neighbourhood metrics (median price, counts, etc.)
 │       └── room_type_summary.sql             # Per–room type metrics (count, avg, median price)
 │
-├── tableau/                                   # Dashboard assets (screenshot + workbook)
+├── tableau/                                  # Dashboard assets (screenshot + workbook)
 │   ├── Tableau Screenshot.png
-│   └── *.twbx                                 # Tableau workbook
+│   └── *.twbx                                # Tableau workbook
 │
 ├── .gitignore
 ├── LICENSE
