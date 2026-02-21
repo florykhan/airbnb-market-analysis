@@ -57,7 +57,7 @@ Use the link above to explore the dashboard in your browser (no Tableau installa
 airbnb-market-analysis/
 │
 ├── data/
-│   ├── raw/                                  # Unmodified input data (not in Git: large CSVs/GeoJSON)
+│   ├── raw/                                  # Unmodified input data (Inside Airbnb Vancouver)
 │   │   ├── listings.csv                      # Inside Airbnb Vancouver listings
 │   │   ├── reviews.csv                       # Reviews (listing_id, date)
 │   │   └── neighbourhoods.geojson            # Neighbourhood boundaries for mapping
@@ -91,7 +91,7 @@ airbnb-market-analysis/
 ```
 
 > 🗒️ **Note:**  
-> - The `data/raw/` directory is **not tracked** (large CSVs and GeoJSON). Place `listings.csv` and `reviews.csv` from [Inside Airbnb](http://insideairbnb.com/get-the-data/) for Vancouver there before running the pipeline.  
+> - Raw input data (`listings.csv`, `reviews.csv`, `neighbourhoods.geojson`) is **included** in `data/raw/` from [Inside Airbnb](http://insideairbnb.com/get-the-data/) (Vancouver).  
 > - The SQLite database `data/airbnb.db` is **not in Git**; it is created by `scripts/load_to_db.py`.  
 > - The `data/processed/*.csv` files are **tracked** so that the Tableau workflow can be reproduced or inspected without re-running exports.
 
@@ -129,19 +129,15 @@ pip3 install pandas
 ```
 (`sqlite3` is part of the Python standard library.)
 
-### 4️⃣ Add the raw data
+### 4️⃣ Raw data
 
-Download the Vancouver dataset from [Inside Airbnb](http://insideairbnb.com/get-the-data/) and place the files in `data/raw/`:
+The repo includes the Vancouver dataset in `data/raw/`:
 
 - `listings.csv`
-- `reviews.csv` (optional; used for review-level analysis if needed)
-- `neighbourhoods.geojson` (optional; for Tableau map layers)
+- `reviews.csv` (used for review-level analysis)
+- `neighbourhoods.geojson` (for Tableau map layers)
 
-```bash
-# Ensure directory exists and place files there
-mkdir -p data/raw
-# Then copy listings.csv, reviews.csv (and optionally neighbourhoods.geojson) into data/raw/
-```
+To refresh or re-download, get the files from [Inside Airbnb](http://insideairbnb.com/get-the-data/) (Vancouver) and replace the contents of `data/raw/`.
 
 ### 5️⃣ Load data into SQLite
 
