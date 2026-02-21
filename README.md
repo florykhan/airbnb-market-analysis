@@ -36,7 +36,7 @@ The main deliverable for visual storytelling is an interactive dashboard publish
 **[Vancouver Airbnb Prices | Neighbourhoods & Room Types](https://public.tableau.com/app/profile/ilian.khankhalaev/viz/VancouverAirbnbPricesNeighbourhoodsRoomTypes/Dashboard1?publish=yes)**
 
 ![Vancouver Airbnb Dashboard](tableau/Tableau%20Screenshot.png)
-_(the [`tableau/`](tableau/) folder contains the Tableau workbook (`.twbx`) so you can explore it locally)_
+_(the [`tableau/`](tableau/) folder contains the Tableau workbook `.twbx` so you can explore it locally)_
 
 The dashboard explores how Airbnb prices vary across Vancouver neighbourhoods, room types, and listing popularity. It includes:
 
