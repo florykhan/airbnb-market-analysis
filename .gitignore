@@ -30,13 +30,11 @@ build/
 *.db-journal
 
 # Data files (large datasets)
-data/raw/*.csv
-data/raw/*.xlsx
-data/raw/*.parquet
-data/raw/*.geojson
 *.csv
 *.xlsx
 *.parquet
+!data/raw/*.csv
+!data/raw/*.geojson
 !data/processed/*.csv
 # Keep structure: !data/**/.gitkeep
 
